@@ -5,6 +5,9 @@ export function App() {
 
   return (
     <section className="App">
+      <div className="div1">
+        <p className="aQuienMas">A quién seguir</p>
+      </div>
       <TwitterFollowCard
         formatUserName={format}
         userName="kikobeats?ttlh1"
@@ -23,6 +26,9 @@ export function App() {
         user="RandomGuy3"
         initialIsFollowing={false}
       />
+      <div className="div2">
+        <p className="mostrarMas">Mostrar más</p>
+      </div>
     </section>
   );
 }

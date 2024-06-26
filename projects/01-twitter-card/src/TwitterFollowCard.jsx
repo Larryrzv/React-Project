@@ -4,19 +4,18 @@ export function TwitterFollowCard({
   formatUserName,
   userName,
   user,
-  initialIsFollowing
+  initialIsFollowing,
 }) {
-  const [inFollowing, setIsFollowing] = useState(initialIsFollowing)
-
+  const [inFollowing, setIsFollowing] = useState(initialIsFollowing);
 
   const buttonText = inFollowing ? "Siguiendo" : "Seguir";
   const buttonClasName = inFollowing
     ? "tw-followCard-button is-following"
     : "tw-followCard-button";
 
-    const handClick = () => {
-      setIsFollowing(!inFollowing)
-    }
+  const handClick = () => {
+    setIsFollowing(!inFollowing);
+  };
   return (
     <article className="tw-followCard">
       <header className="tw-followCard-header">
@@ -25,18 +24,19 @@ export function TwitterFollowCard({
           alt="El avatar random"
           src={`https://unavatar.io/${userName}`}
         />
-        <div className="tw-followCard-info">
+        <label className="tw-followCard-info">
           <strong>{userName}</strong>
           <span className="tw-followCard-infoUserName">
             {formatUserName(user)}
           </span>
-        </div>
+        </label>
       </header>
 
       <asid>
         <button className={buttonClasName} onClick={handClick}>
           <span className="tw-followCard-text">{buttonText}</span>
-          <span className="tw-followCard-stopFollow">Dejar de seguir</span></button>
+          <span className="tw-followCard-stopFollow">Dejar de seguir</span>
+        </button>
       </asid>
     </article>
   );

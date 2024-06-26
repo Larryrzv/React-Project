@@ -1,0 +1,53 @@
+body {
+  margin: 0;
+  background-color: #000000;
+  font-family: system-ui;
+  display: grid;
+  place-content: center;
+  min-height: 100vh;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  background-color: #000000ee;
+  border: 1px solid rgba(255, 255, 255, 0.301);
+  border-radius: 25px;
+}
+
+.mostrarMas {
+  color: rgb(34, 152, 248);
+  font-size: 20px;
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+.aQuienMas {
+  font-size: 25px;
+  font-weight: bolder;
+  color: white;
+  margin-top: 0;
+  margin-bottom: 2px;
+}
+
+.div1 {
+  padding-inline: 1rem;
+  padding-block: 0.8rem;
+}
+
+.div2 {
+  padding-inline: 1rem;
+  padding-block: 0.8rem;
+  cursor: pointer;
+  border-bottom-right-radius: 16px;
+  border-bottom-left-radius: 16px;
+}
+
+.div2:hover {
+  background-color: rgba(255, 255, 255, 0.03);
+  transition-duration: 0.2s;
+}
+
+.root:hover {
+  background-color: none;
+}
